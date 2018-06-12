@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Delivery blank</title>
+</head>
+<body>
+<table style="width: 500px;" border="1">
+    <tr>
+        <td style="width: 50%;">Order Date: <strong>{ORDER_DATE}</strong></td>
+        <td>Purchase Order Number: <strong>{ORDER_NUMBER}</strong></td>
+    </tr>
+    <tr>
+        <td>
+            <p><strong>Shipping Address:</strong><br /></p>
+            <p><em>{SHIP_NAME}</em></p>
+            <p>{SHIP_STREET}</p>
+            <p>{SHIP_CITY}</p>
+            <p>{SHIP_ZIP}</p>
+            <p>{SHIP_COUNTRY}</p>
+        </td>
+        <td>
+            <p><strong>Billing Address:</strong><br /></p>
+            <p><em>{BILL_NAME}</em></p>
+            <p>{BILL_STREET}</p>
+            <p>{BILL_CITY}</p>
+            <p>{BILL_ZIP}</p>
+            <p>{BILL_COUNTRY}</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table style="width: 100%; padding: 2px;" border="1">
+                <tr>
+                    <td><strong>Part Number</strong></td>
+                    <td><strong>Product Name</strong></td>
+                    <td><strong>Quantity</strong></td>
+                    <td><strong>US Price</strong></td>
+                    <td><strong>Other</strong></td>
+                </tr>
+                <tr>
+                    <td>{ITEM1_NUMBER}</td>
+                    <td>{ITEM1_NAME}</td>
+                    <td>{ITEM1_QUANTITY}</td>
+                    <td>{ITEM1_PRICE}</td>
+                    <td>{ITEM1_OTHER}</td>
+                </tr>
+                <tr>
+                    <td>{ITEM2_NUMBER}</td>
+                    <td>{ITEM2_NAME}</td>
+                    <td>{ITEM2_QUANTITY}</td>
+                    <td>{ITEM2_PRICE}</td>
+                    <td>{ITEM2_OTHER}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>DeliveryNotes: </strong>{DELIVERY_NOTES}</td>
+    </tr>
+</table>
+</body>
+</html>
